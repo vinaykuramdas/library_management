@@ -5,15 +5,15 @@
       <form [formGroup]="loginForm" (ngSubmit)="login()">
         <div class="form-group">
           <label>User Name</label>
-          <input type="text" class="form-control" formControlName="userName" placeholder="username" [ngClass]="{ 'is-invalid': submitted && f.userName.errors }" />
-          <div *ngIf="submitted && f.userName.errors" class="invalid-feedback">
+          <input type="text" class="form-control" formControlName="userName" placeholder="username" [ngClass]="{ 'is-invalid': f.userName.errors }" />
+          <div *ngIf=" f.userName.errors" class="invalid-feedback">
               <div *ngIf="f.userName.errors.required">User Name is required</div>
           </div>
         </div>
         <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" formControlName="password" placeholder="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
-            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <input type="password" class="form-control" formControlName="password" placeholder="password" [ngClass]="{ 'is-invalid': f.password.errors }" />
+            <div *ngIf="f.password.errors" class="invalid-feedback">
                 <div *ngIf="f.password.errors.required">Password is required</div>
             </div>
         </div>

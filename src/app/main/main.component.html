@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="subjects">
+    <div class="row">
+      <div class="col-md-6">
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+        <th>Subject</th>
+        <th>Faculty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Finance</td><td><button type="button" class="btn">Santosh Sir</button></td>
+        </tr>
+        <tr>
+          <td>Marketing</td><td><button type="button" class="btn" (click)="gotosubject()">Smita Ma'm</button></td>
+        </tr>
+        <tr>
+          <td>DataAnalytics</td><td><button type="button" class="btn" >Niviya Ma'm</button></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+<div class="col-md-3">
+  <div class="card bg-primary">
+      <div class="card-body">
+        <h3>Upcoming Notifications</h3>
+          <ul class="card-text">
+            <li>May 20-ED(capstone) presentation</li>
+            <li>May 28&29 - Seminar VIVA</li>
+            <li>Jun 04-Semester End exams</li>
+          </ul>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <div class="btn-group-vertical btngroup">
+      <button type="button" class="btn btn-secondary btns">TESTS</button><br>
+      <button type="button" class="btn btn-secondary btns">BUY BOOKS</button><br>
+      <button type="button" class="btn btn-secondary btns">COURSES</button><br>
+      <button type="button" class="btn btn-secondary btns">MARK LISTS</button><br>
+    </div>
+    </div>
+    </div>
+</div>
+<br><br>
+  <div class="form-group">
+      <button type="submit" class="btn btn-danger danger" (click)="logout()">Logout</button>
+  </div>
+</div>

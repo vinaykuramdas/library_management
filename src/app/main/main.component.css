@@ -1,0 +1,31 @@
+.subjects {
+    padding-top:20px;
+}
+/* .table{
+    width:1000px;
+} */
+.table-bordered{
+    color: black;
+}
+.card{
+    height:250px;
+}
+.btngroup{
+    float:right;
+}
+.btns{
+    width:200px;
+    border-color: chartreuse;
+    border-radius: 10px;
+}
+.btns:hover{
+    background-color: chocolate;
+}
+.container-fluid{
+    background-color: lightblue;
+    height: 720px;
+}
+.danger{
+    margin-top: 300px;
+    margin-left: 650px;
+}

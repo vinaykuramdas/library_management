@@ -1,0 +1,44 @@
+.links{
+    color: black !important;
+}
+.text{
+    margin-left: 420px;
+    font-style: italic;
+}
+.container-fluid{
+    height: 530px;
+    background-color: lightgreen;
+}
+.mainheading{
+    margin-top: 80px;
+    font-size: 80px;
+    margin-left: 650px;
+}
+.content{
+    margin-left: 70px;
+}
+.search{
+    width: 450px;
+}
+button{
+    color: white;
+}
+.login{
+margin-left: 650px;
+width: 150px;
+border-color: white;
+border-radius: 10px;
+}
+.signup{
+    margin-left: 650px;
+    width: 150px;
+    border-color: white;
+    border-radius: 10px;
+}
+label{
+    font-weight: bold;
+}
+.footer p {
+    margin-left: 50px;
+    display: inline-block;
+}

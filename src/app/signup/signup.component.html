@@ -1,0 +1,56 @@
+<div class="container-fluid signup">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h3>SignUp Page</h3>
+    <form [formGroup]="signupForm" (ngSubmit)="signup()">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" formControlName="name" placeholder="name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+            <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                <div *ngIf="f.name.errors.required">Name is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+              <label>Password</label>
+              <input type="Password" class="form-control" formControlName="password" placeholder="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+              <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                  <div *ngIf="f.password.errors.required">Password is required</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" formControlName="email" placeholder="Email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Email is required</div>
+                </div>
+              </div>
+              <div class="form-group">
+                  <label>Collage</label>
+                  <input type="text" class="form-control" formControlName="collage" placeholder="collage name" [ngClass]="{ 'is-invalid': submitted && f.collage.errors }" />
+                  <div *ngIf="submitted && f.collage.errors" class="invalid-feedback">
+                      <div *ngIf="f.collage.errors.required">collage Name is required</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label>Class</label>
+                    <input type="text" class="form-control" formControlName="class" placeholder="class" [ngClass]="{ 'is-invalid': submitted && f.class.errors }" />
+                    <div *ngIf="submitted && f.class.errors" class="invalid-feedback">
+                        <div *ngIf="f.class.errors.required">class is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <label>Section</label>
+                      <input type="text" class="form-control" formControlName="section" placeholder="section" [ngClass]="{ 'is-invalid': submitted && f.section.errors }" />
+                      <div *ngIf="submitted && f.section.errors" class="invalid-feedback">
+                          <div *ngIf="f.section.errors.required">section is required</div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">SignUp</button>
+                    </div>       
+
+    </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+.login{
+  background-color: lightblue;
+  height:720px;
+}  
+.page{
+  padding-top: 20px;
+}
